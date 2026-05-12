@@ -1,0 +1,19 @@
+{
+  "name": "tortiki-ot-yulii",
+  "version": "1.0.0",
+  "description": "Веб-сайт кондитерской «Тортики от Юлии» — курсовой проект",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1",
+    "build:css": "npx sass css/style.scss css/style.css --style=expanded",
+    "watch:css": "npx sass css/style.scss css/style.css --style=expanded --watch",
+    "validate": "npx html-validate *.html"
+  },
+  "keywords": [],
+  "author": "Пацовский",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "html-validate": "^11.0.0",
+    "sass": "^1.99.0"
+  }
+}

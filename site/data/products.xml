@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<!--
+  Файл данных кондитерских изделий
+  Дисциплина: Компьютерные языки разметки
+  Тема: Веб-сайт «Кондитерские изделия»
+-->
+<cakeshop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="products.xsd">
+  <info>
+    <name>Тортики от Юлии</name>
+    <description>Домашняя кондитерская ручной работы</description>
+    <address>Минск, пр-т Независимости, 42</address>
+    <phone>+375 (29) 123-45-67</phone>
+    <email>hello@juliacakes.by</email>
+  </info>
+
+  <categories>
+    <category id="cat-1" name="Торты"/>
+    <category id="cat-2" name="Капкейки"/>
+    <category id="cat-3" name="Десерты"/>
+  </categories>
+
+  <products>
+    <product id="p-001" category="cat-1">
+      <name>Лавандовый медовый торт</name>
+      <price currency="BYN">135.00</price>
+      <weight unit="г">850</weight>
+      <rating>4.9</rating>
+      <reviews>128</reviews>
+      <description>Нежный бисквит на натуральном фермерском сливочном масле. Каждый корж пропитан домашним медом с лесных пасек и ароматной лавандой.</description>
+      <ingredients>
+        <item>Домашний лесной мед</item>
+        <item>Натуральное фермерское сливочное масло</item>
+        <item>Органическая мука</item>
+        <item>Свежие фермерские яйца</item>
+        <item>Кулинарная лаванда</item>
+        <item>Мадагаскарская ваниль</item>
+        <item>Морская соль</item>
+      </ingredients>
+      <nutrition>
+        <calories>342</calories>
+        <proteins>5.8</proteins>
+        <fats>18.2</fats>
+        <carbs>42.5</carbs>
+      </nutrition>
+      <tags>
+        <tag>Сезонный вкус</tag>
+        <tag>Без орехов</tag>
+      </tags>
+      <image>images/lavender-cake.jpg</image>
+    </product>
+
+    <product id="p-002" category="cat-1">
+      <name>Торт «Bounty»</name>
+      <price currency="BYN">65.00</price>
+      <weight unit="г">1000</weight>
+      <rating>4.7</rating>
+      <reviews>89</reviews>
+      <description>Шоколадный бисквит с сочной кокосовой начинкой, напоминающий любимый батончик.</description>
+      <ingredients>
+        <item>Кокосовая стружка</item>
+        <item>Бельгийский шоколад</item>
+        <item>Сливочный крем</item>
+        <item>Натуральное молоко</item>
+      </ingredients>
+      <nutrition>
+        <calories>380</calories>
+        <proteins>6.2</proteins>
+        <fats>22.1</fats>
+        <carbs>38.4</carbs>
+      </nutrition>
+      <tags>
+        <tag>Хит</tag>
+      </tags>
+      <image>images/bounty-cake.jpg</image>
+    </product>
+
+    <product id="p-003" category="cat-1">
+      <name>Торт «Snickers»</name>
+      <price currency="BYN">70.00</price>
+      <weight unit="г">1000</weight>
+      <rating>4.8</rating>
+      <reviews>105</reviews>
+      <description>Арахис, домашняя карамель и насыщенный шоколад в идеальном сочетании слоев.</description>
+      <ingredients>
+        <item>Обжаренный арахис</item>
+        <item>Домашняя карамель</item>
+        <item>Шоколадный ганаш</item>
+        <item>Сливочное масло</item>
+      </ingredients>
+      <nutrition>
+        <calories>410</calories>
+        <proteins>8.5</proteins>
+        <fats>24.3</fats>
+        <carbs>35.7</carbs>
+      </nutrition>
+      <tags>
+        <tag>Хит</tag>
+      </tags>
+      <image>images/snickers-cake.jpg</image>
+    </product>
+
+    <product id="p-004" category="cat-1">
+      <name>Торт «Black Forest»</name>
+      <price currency="BYN">68.00</price>
+      <weight unit="г">1000</weight>
+      <rating>4.6</rating>
+      <reviews>76</reviews>
+      <description>Классический десерт с вишней, взбитыми сливками и шоколадными коржами.</description>
+      <ingredients>
+        <item>Вишня в собственном соку</item>
+        <item>Шоколадные коржи</item>
+        <item>Взбитые сливки</item>
+        <item>Кirsch</item>
+      </ingredients>
+      <nutrition>
+        <calories>365</calories>
+        <proteins>5.4</proteins>
+        <fats>19.8</fats>
+        <carbs>40.2</carbs>
+      </nutrition>
+      <tags>
+        <tag>Классика</tag>
+      </tags>
+      <image>images/blackforest-cake.jpg</image>
+    </product>
+
+    <product id="p-005" category="cat-1">
+      <name>Торт «Milk Girl»</name>
+      <price currency="BYN">55.00</price>
+      <weight unit="г">900</weight>
+      <rating>4.7</rating>
+      <reviews>92</reviews>
+      <description>Нежнейшие коржи на сгущенном молоке с легким сливочным кремом и ягодами.</description>
+      <ingredients>
+        <item>Сгущенное молоко</item>
+        <item>Сливочный крем</item>
+        <item>Свежие ягоды</item>
+        <item>Мука высшего сорта</item>
+      </ingredients>
+      <nutrition>
+        <calories>355</calories>
+        <proteins>6.1</proteins>
+        <fats>17.5</fats>
+        <carbs>43.8</carbs>
+      </nutrition>
+      <tags>
+        <tag>Детский</tag>
+      </tags>
+      <image>images/milkgirl-cake.jpg</image>
+    </product>
+
+    <product id="p-006" category="cat-1">
+      <name>Торт «Наполеон»</name>
+      <price currency="BYN">50.00</price>
+      <weight unit="г">1000</weight>
+      <rating>4.8</rating>
+      <reviews>112</reviews>
+      <description>Хрустящие домашние слои теста и заварной крем по традиционному рецепту.</description>
+      <ingredients>
+        <item>Слоеное тесто ручной работы</item>
+        <item>Заварной крем</item>
+        <item>Сливочное масло</item>
+        <item>Ванильный сахар</item>
+      </ingredients>
+      <nutrition>
+        <calories>390</calories>
+        <proteins>5.9</proteins>
+        <fats>21.2</fats>
+        <carbs>44.1</carbs>
+      </nutrition>
+      <tags>
+        <tag>Классика</tag>
+      </tags>
+      <image>images/napoleon-cake.jpg</image>
+    </product>
+
+    <product id="p-007" category="cat-1">
+      <name>Медовик</name>
+      <price currency="BYN">45.00</price>
+      <weight unit="г">900</weight>
+      <rating>4.9</rating>
+      <reviews>143</reviews>
+      <description>Ароматные медовые коржи и нежный сметанный крем — вкус детства.</description>
+      <ingredients>
+        <item>Натуральный мед</item>
+        <item>Сметанный крем</item>
+        <item>Орехи (опционально)</item>
+        <item>Сливочное масло</item>
+      </ingredients>
+      <nutrition>
+        <calories>380</calories>
+        <proteins>6.3</proteins>
+        <fats>19.5</fats>
+        <carbs>45.2</carbs>
+      </nutrition>
+      <tags>
+        <tag>Хит</tag>
+        <tag>Без глютена (опционально)</tag>
+      </tags>
+      <image>images/medovik-cake.jpg</image>
+    </product>
+
+    <product id="p-008" category="cat-2">
+      <name>Капкейк ванильный</name>
+      <price currency="BYN">8.00</price>
+      <weight unit="г">120</weight>
+      <rating>4.8</rating>
+      <reviews>56</reviews>
+      <description>Воздушный ванильный бисквит с шапочкой из сливочного крем-чиза.</description>
+      <ingredients>
+        <item>Натуральная ваниль</item>
+        <item>Сливочный крем-чиз</item>
+        <item>Мука</item>
+        <item>Свежие яйца</item>
+      </ingredients>
+      <nutrition>
+        <calories>320</calories>
+        <proteins>4.8</proteins>
+        <fats>16.2</fats>
+        <carbs>38.5</carbs>
+      </nutrition>
+      <tags>
+        <tag>Популярный</tag>
+      </tags>
+      <image>images/vanilla-cupcake.jpg</image>
+    </product>
+
+    <product id="p-009" category="cat-2">
+      <name>Капкейк шоколадный</name>
+      <price currency="BYN">8.00</price>
+      <weight unit="г">120</weight>
+      <rating>4.7</rating>
+      <reviews>48</reviews>
+      <description>Насыщенный шоколадный вкус для истинных ценителей какао.</description>
+      <ingredients>
+        <item>Бельгийский какао</item>
+        <item>Шоколадный ганаш</item>
+        <item>Сливки</item>
+        <item>Натуральное масло</item>
+      </ingredients>
+      <nutrition>
+        <calories>340</calories>
+        <proteins>5.2</proteins>
+        <fats>18.5</fats>
+        <carbs>36.8</carbs>
+      </nutrition>
+      <tags>
+        <item>Шоколадный</item>
+      </tags>
+      <image>images/choco-cupcake.jpg</image>
+    </product>
+  </products>
+</cakeshop>

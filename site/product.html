@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лавандовый медовый торт ручной работы от домашней кондитерской Тортики от Юлии. Натуральные ингредиенты.">
+  <title>Лавандовый медовый торт — Тортики от Юлии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Тортики от Юлии</a>
+      <nav class="header__nav" aria-label="Главная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html" class="is-active">Магазин</a>
+        <a href="about.html">О нас</a>
+        <a href="about.html#contacts">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button type="button" class="header__cart" id="cart-toggle" aria-label="Открыть корзину">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-cart"></use></svg>
+          <span class="header__cart-count" id="cart-count">0</span>
+        </button>
+        <button type="button" class="header__menu-btn" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav__panel">
+      <button type="button" class="mobile-nav__close" id="menu-close" aria-label="Закрыть меню">
+        <svg aria-hidden="true"><use href="svg/icons.svg#icon-close"></use></svg>
+      </button>
+      <nav class="mobile-nav__list" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Магазин</a>
+        <a href="about.html">О нас</a>
+        <a href="about.html#contacts">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Боковая корзина">
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <h2>Корзина</h2>
+        <button type="button" id="cart-close" aria-label="Закрыть корзину">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <div class="cart-drawer__list" id="drawer-items"></div>
+      <div class="cart-drawer__footer">
+        <div class="total"><span>Итого</span><span id="drawer-total">0.00 BYN</span></div>
+        <a href="cart.html" class="btn btn--primary">Перейти в корзину</a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <article class="product" aria-labelledby="product-title">
+      <div class="product__inner">
+        <nav class="product__breadcrumbs" aria-label="Хлебные крошки">
+          <a href="catalog.html">Выпечка</a>
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-arrow-right"></use></svg>
+          <a href="catalog.html">Торты</a>
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-arrow-right"></use></svg>
+          <span>Лавандовый медовый торт</span>
+        </nav>
+
+        <div class="product__grid">
+          <section class="product__gallery" aria-label="Галерея товара">
+            <div class="product__gallery-main">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&auto=format&fit=crop&q=80" alt="Лавандовый медовый торт с цветочным декором" loading="lazy">
+            </div>
+            <div class="product__gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop&q=80" alt="Детали декора торта" loading="lazy">
+            </div>
+            <div class="product__gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&auto=format&fit=crop&q=80" alt="Процесс приготовления" loading="lazy">
+            </div>
+          </section>
+
+          <section class="product__info">
+            <div class="product__info-top">
+              <span class="badge badge--season">Сезонный вкус</span>
+              <p class="rating">
+                <svg aria-hidden="true"><use href="svg/icons.svg#icon-star"></use></svg>
+                <span>4.9</span>
+                <small>(128 отзывов)</small>
+              </p>
+            </div>
+            <h1 id="product-title">Лавандовый медовый торт</h1>
+            <p class="price">135.00 BYN</p>
+            <p class="desc">Этот торт я пеку на своей маленькой кухне специально для вас, как для самых близких друзей. Нежный бисквит замешивается на настоящем деревенском сливочном масле. Каждый корж пропитан любовью и моим любимым лесным медом, в который я вручную добавляю ароматную лаванду.</p>
+            <div class="tags">
+              <span class="tag-pill">Без орехов</span>
+              <span class="tag-pill">Без глютена (опционально)</span>
+            </div>
+            <div class="qty-row">
+              <div class="qty-control">
+                <button type="button" aria-label="Уменьшить количество" onclick="changeQuantity(-1)">
+                  <svg aria-hidden="true"><use href="svg/icons.svg#icon-minus"></use></svg>
+                </button>
+                <span id="qty">1</span>
+                <button type="button" aria-label="Увеличить количество" onclick="changeQuantity(1)">
+                  <svg aria-hidden="true"><use href="svg/icons.svg#icon-plus"></use></svg>
+                </button>
+              </div>
+              <span class="stock">Осталось всего 8 на сегодня</span>
+            </div>
+            <button type="button" class="btn btn--primary btn--large" id="add-to-cart" data-id="p-001" data-name="Лавандовый медовый торт" data-price="135.00">
+              <svg aria-hidden="true"><use href="svg/icons.svg#icon-cart"></use></svg>
+              В корзину
+            </button>
+
+            <details>
+              <summary>
+                <span>Состав и происхождение</span>
+                <svg style="transform:rotate(90deg)"><use href="svg/icons.svg#icon-arrow-right"></use></svg>
+              </summary>
+              <div class="detail-content">
+                <p>Домашний лесной мед, натуральное фермерское сливочное масло, органическая мука, свежие фермерские яйца, кулинарная лаванда, мадагаскарская ваниль, морская соль.</p>
+                <table>
+                  <tbody>
+                    <tr><td>Калории</td><td>342 ккал</td></tr>
+                    <tr><td>Белки</td><td>5.8 г</td></tr>
+                    <tr><td>Жиры</td><td>18.2 г</td></tr>
+                    <tr><td>Углеводы</td><td>42.5 г</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>Информация о доставке</span>
+                <svg style="transform:rotate(90deg)"><use href="svg/icons.svg#icon-arrow-right"></use></svg>
+              </summary>
+              <div class="detail-content">
+                <p>Доставка курьером в упаковке с температурным контролем. Доставка на следующий день доступна при заказе до 14:00.</p>
+              </div>
+            </details>
+          </section>
+        </div>
+
+        <section class="product__related" aria-labelledby="related-title">
+          <h2 id="related-title">Вам также может понравиться</h2>
+          <div class="related-grid">
+            <article class="card">
+              <div class="catalog__card-header">
+                <h3>Торт «Сникерс»</h3>
+                <span class="price">70.00 BYN</span>
+              </div>
+              <p style="font-size:0.875rem; color:#655f4c;">Насыщенный шоколадный бисквит, соленая карамель и арахис.</p>
+              <button type="button" class="btn btn--secondary btn--small" data-add="p-003">В корзину</button>
+            </article>
+            <article class="card">
+              <div class="catalog__card-header">
+                <h3>Капкейк ванильный</h3>
+                <span class="price">8.00 BYN</span>
+              </div>
+              <p style="font-size:0.875rem; color:#655f4c;">Воздушный бисквит с ароматом натуральной ванили.</p>
+              <button type="button" class="btn btn--secondary btn--small" data-add="p-008">В корзину</button>
+            </article>
+            <article class="card">
+              <div class="catalog__card-header">
+                <h3>Торт «Пряная вишня»</h3>
+                <span class="price">115.00 BYN</span>
+              </div>
+              <p style="font-size:0.875rem; color:#655f4c;">Темный шоколад и сочная вишня с оттенком корицы.</p>
+              <button type="button" class="btn btn--secondary btn--small" data-add="p-004">В корзину</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">Тортики от Юлии</div>
+        <p class="footer__desc">Создаю мгновения счастья из муки, сахара и вдохновения. Пеку как для самых близких.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Что заказать</h4>
+        <nav class="footer__links" aria-label="Ссылки в подвале">
+          <a href="catalog.html">Авторские торты</a>
+          <a href="catalog.html">Наборы капкейков</a>
+          <a href="about.html">Обо мне</a>
+          <a href="about.html#contacts">Как заказать</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__title">Контакты</h4>
+        <div class="footer__contacts">
+          <p><svg aria-hidden="true"><use href="svg/icons.svg#icon-map-pin"></use></svg> Домашняя студия, Пинск</p>
+          <a href="tel:+375299024652"><svg aria-hidden="true"><use href="svg/icons.svg#icon-phone"></use></svg> +375299024652</a>
+          <a href="mailto:juliacakes.pinsk@gmail.com"><svg aria-hidden="true"><use href="svg/icons.svg#icon-mail"></use></svg> juliacakes.pinsk@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <nav class="footer__social" aria-label="Социальные сети">
+        <a href="https://instagram.com/lulka891025" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="svg/icons.svg#icon-instagram"></use></svg></a>
+        <a href="#" aria-label="Pinterest"><svg aria-hidden="true"><use href="svg/icons.svg#icon-gift"></use></svg></a>
+        <a href="#" aria-label="Рассылка"><svg aria-hidden="true"><use href="svg/icons.svg#icon-mail"></use></svg></a>
+      </nav>
+      <p class="footer__copy">© 2024 Тортики от Юлии. С любовью к каждому заказу.</p>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top" id="scroll-top" aria-label="Наверх">
+    <svg aria-hidden="true"><use href="svg/icons.svg#icon-arrow-right" style="transform: rotate(-90deg); transform-origin: center;"></use></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

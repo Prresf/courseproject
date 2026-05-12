@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Корзина покупок в кондитерской Тортики от Юлии.">
+  <title>Корзина — Тортики от Юлии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Тортики от Юлии</a>
+      <nav class="header__nav" aria-label="Главная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Магазин</a>
+        <a href="about.html">О нас</a>
+        <a href="about.html#contacts">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button type="button" class="header__cart" id="cart-toggle" aria-label="Открыть корзину">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-cart"></use></svg>
+          <span class="header__cart-count" id="cart-count">0</span>
+        </button>
+        <button type="button" class="header__menu-btn" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav__panel">
+      <button type="button" class="mobile-nav__close" id="menu-close" aria-label="Закрыть меню">
+        <svg aria-hidden="true"><use href="svg/icons.svg#icon-close"></use></svg>
+      </button>
+      <nav class="mobile-nav__list" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Магазин</a>
+        <a href="about.html">О нас</a>
+        <a href="about.html#contacts">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Боковая корзина">
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <h2>Корзина</h2>
+        <button type="button" id="cart-close" aria-label="Закрыть корзину">
+          <svg aria-hidden="true"><use href="svg/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <div class="cart-drawer__list" id="drawer-items"></div>
+      <div class="cart-drawer__footer">
+        <div class="total"><span>Итого</span><span id="drawer-total">0.00 BYN</span></div>
+        <a href="cart.html" class="btn btn--primary">Перейти в корзину</a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="cart" aria-labelledby="cart-title">
+      <div class="cart__inner">
+        <h1 id="cart-title">Ваша корзина</h1>
+
+        <div class="cart__empty" id="cart-empty">
+          <p>В корзине пока ничего нет. Загляните в каталог и выберите что-нибудь вкусненькое!</p>
+          <a href="catalog.html" class="btn btn--primary">Перейти в каталог</a>
+        </div>
+
+        <div class="cart__list" id="cart-items" style="display:none;"></div>
+
+        <div class="cart__summary" id="cart-summary" style="display:none;">
+          <div class="cart__summary-row">
+            <span>Итого по корзине</span>
+            <span id="summary-subtotal">0.00 BYN</span>
+          </div>
+          <div class="cart__summary-row">
+            <span>Доставка</span>
+            <span class="free">Бесплатно</span>
+          </div>
+          <div class="cart__summary-row cart__summary-row--total">
+            <span>Всего к оплате</span>
+            <span id="summary-total">0.00 BYN</span>
+          </div>
+          <a href="checkout.html" class="btn btn--primary btn--large">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">Тортики от Юлии</div>
+        <p class="footer__desc">Создаю мгновения счастья из муки, сахара и вдохновения. Пеку как для самых близких.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Что заказать</h4>
+        <nav class="footer__links" aria-label="Ссылки в подвале">
+          <a href="catalog.html">Авторские торты</a>
+          <a href="catalog.html">Наборы капкейков</a>
+          <a href="about.html">Обо мне</a>
+          <a href="about.html#contacts">Как заказать</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__title">Контакты</h4>
+        <div class="footer__contacts">
+          <p><svg aria-hidden="true"><use href="svg/icons.svg#icon-map-pin"></use></svg> Домашняя студия, Пинск</p>
+          <a href="tel:+375299024652"><svg aria-hidden="true"><use href="svg/icons.svg#icon-phone"></use></svg> +375299024652</a>
+          <a href="mailto:juliacakes.pinsk@gmail.com"><svg aria-hidden="true"><use href="svg/icons.svg#icon-mail"></use></svg> juliacakes.pinsk@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <nav class="footer__social" aria-label="Социальные сети">
+        <a href="https://instagram.com/lulka891025" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="svg/icons.svg#icon-instagram"></use></svg></a>
+        <a href="#" aria-label="Pinterest"><svg aria-hidden="true"><use href="svg/icons.svg#icon-gift"></use></svg></a>
+        <a href="#" aria-label="Рассылка"><svg aria-hidden="true"><use href="svg/icons.svg#icon-mail"></use></svg></a>
+      </nav>
+      <p class="footer__copy">© 2024 Тортики от Юлии. С любовью к каждому заказу.</p>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top" id="scroll-top" aria-label="Наверх">
+    <svg aria-hidden="true"><use href="svg/icons.svg#icon-arrow-right" style="transform: rotate(-90deg); transform-origin: center;"></use></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

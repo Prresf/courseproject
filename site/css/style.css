@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* ============================================
-   SCSS — Исходный файл стилей
-   Компьютерные языки размётки, курсовой проект
-   ============================================ */
 /* 1. Переменные */
 /* 2. Миксины */
 /* 3. Базовые стили */
@@ -248,6 +244,10 @@ ul, ol {
   gap: 1rem;
 }
 .header__cart {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
   position: relative;
   color: #974362;
 }
@@ -1293,17 +1293,6 @@ ul, ol {
   padding-bottom: 4rem;
 }
 .cart__inner {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-@media (min-width: 768px) {
-  .cart__inner {
-    padding: 0 3rem;
-  }
-}
-.cart__inner {
   max-width: 900px;
 }
 .cart h1 {
@@ -1459,10 +1448,6 @@ ul, ol {
 }
 .cart__summary-row .free {
   color: #3c6942;
-}
-.cart__summary .btn {
-  width: 100%;
-  margin-top: 1.5rem;
 }
 
 /* 12. Оформление заказа */
@@ -2027,5 +2012,3 @@ input:checked ~ .checkout__step .payment-options .payment-option, .checkout__ste
   opacity: 1;
   transform: translateY(0);
 }
-
-/*# sourceMappingURL=style.css.map */

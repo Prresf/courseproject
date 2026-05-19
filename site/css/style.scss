@@ -289,6 +289,7 @@ ul, ol {
     gap: 1rem;
   }
   &__cart {
+    @include btn-reset;
     position: relative;
     color: $primary;
     svg {
@@ -1195,7 +1196,7 @@ ul, ol {
   padding-top: 110px;
   padding-bottom: 4rem;
   &__inner {
-    @include container;
+    // @include container;
     max-width: 900px;
   }
   h1 {
@@ -1339,10 +1340,10 @@ ul, ol {
         color: $secondary;
       }
     }
-    .btn {
-      width: 100%;
-      margin-top: 1.5rem;
-    }
+    // .btn {
+    //   width: 100%;
+    //   margin-top: 1.5rem;
+    // }
   }
 }
 

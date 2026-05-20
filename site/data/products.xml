@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="products.xsl"?>
-<!--
-  Файл данных кондитерских изделий
-  Дисциплина: Компьютерные языки разметки
-  Тема: Веб-сайт «Кондитерские изделия»
--->
-<cakeshop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="products.xsd">
+<cakeshop>
   <info>
     <name>Тортики от Юлии</name>
     <description>Домашняя кондитерская ручной работы</description>
@@ -16,9 +10,9 @@
   </info>
 
   <categories>
-    <category id="cat-1" name="Торты"/>
-    <category id="cat-2" name="Капкейки"/>
-    <category id="cat-3" name="Десерты"/>
+    <category id="cat-1" name="Торты" />
+    <category id="cat-2" name="Капкейки" />
+    <category id="cat-3" name="Десерты" />
   </categories>
 
   <products>
@@ -28,7 +22,8 @@
       <weight unit="г">850</weight>
       <rating>4.9</rating>
       <reviews>128</reviews>
-      <description>Нежный бисквит на натуральном фермерском сливочном масле. Каждый корж пропитан домашним медом с лесных пасек и ароматной лавандой.</description>
+      <description>Нежный бисквит на натуральном фермерском сливочном масле. Каждый корж пропитан
+        домашним медом с лесных пасек и ароматной лавандой.</description>
       <ingredients>
         <item>Домашний лесной мед</item>
         <item>Натуральное фермерское сливочное масло</item>
